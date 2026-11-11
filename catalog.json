@@ -1,0 +1,781 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-10T20:00Z",
+  "currencies": [
+    {
+      "id": "chase_ur",
+      "name": "Chase Ultimate Rewards",
+      "unitName": "points",
+      "isCash": false,
+      "baselineCentsPerPoint": 1.0,
+      "baselineLabel": "toward travel booked through Chase Travel",
+      "redemptionExamples": [
+        {
+          "id": "hyatt_nyc",
+          "singular": "night at a Hyatt Place hotel in New York City",
+          "plural": "nights at a Hyatt Place hotel in New York City",
+          "pointsCost": 25000,
+          "via": "Transfer to World of Hyatt",
+          "symbol": "bed.double.fill"
+        },
+        {
+          "id": "europe_economy",
+          "singular": "round-trip economy flight to Europe",
+          "plural": "round-trip economy flights to Europe",
+          "pointsCost": 50000,
+          "via": "Transfer to Air France-KLM Flying Blue",
+          "symbol": "airplane"
+        },
+        {
+          "id": "us_domestic",
+          "singular": "round-trip flight within the US",
+          "plural": "round-trip flights within the US",
+          "pointsCost": 25000,
+          "via": "Transfer to United MileagePlus",
+          "symbol": "airplane.departure"
+        }
+      ]
+    },
+    {
+      "id": "amex_mr",
+      "name": "Amex Membership Rewards",
+      "unitName": "points",
+      "isCash": false,
+      "baselineCentsPerPoint": 1.0,
+      "baselineLabel": "toward flights booked through Amex Travel",
+      "redemptionExamples": [
+        {
+          "id": "europe_economy",
+          "singular": "round-trip economy flight to Europe",
+          "plural": "round-trip economy flights to Europe",
+          "pointsCost": 50000,
+          "via": "Transfer to Air France-KLM Flying Blue",
+          "symbol": "airplane"
+        },
+        {
+          "id": "hilton_night",
+          "singular": "night at a Hilton hotel",
+          "plural": "nights at a Hilton hotel",
+          "pointsCost": 30000,
+          "via": "Transfer to Hilton Honors (1:2)",
+          "symbol": "bed.double.fill"
+        },
+        {
+          "id": "us_domestic",
+          "singular": "round-trip flight within the US",
+          "plural": "round-trip flights within the US",
+          "pointsCost": 25000,
+          "via": "Transfer to Delta SkyMiles",
+          "symbol": "airplane.departure"
+        }
+      ]
+    },
+    {
+      "id": "capone_miles",
+      "name": "Capital One Miles",
+      "unitName": "miles",
+      "isCash": false,
+      "baselineCentsPerPoint": 1.0,
+      "baselineLabel": "toward any travel purchase",
+      "redemptionExamples": [
+        {
+          "id": "europe_economy",
+          "singular": "round-trip economy flight to Europe",
+          "plural": "round-trip economy flights to Europe",
+          "pointsCost": 50000,
+          "via": "Transfer to Air France-KLM Flying Blue",
+          "symbol": "airplane"
+        },
+        {
+          "id": "us_domestic",
+          "singular": "round-trip flight within the US",
+          "plural": "round-trip flights within the US",
+          "pointsCost": 25000,
+          "via": "Transfer to Air Canada Aeroplan",
+          "symbol": "airplane.departure"
+        },
+        {
+          "id": "wyndham_night",
+          "singular": "night at a Wyndham hotel",
+          "plural": "nights at a Wyndham hotel",
+          "pointsCost": 15000,
+          "via": "Transfer to Wyndham Rewards",
+          "symbol": "bed.double.fill"
+        }
+      ]
+    },
+    {
+      "id": "cash_back",
+      "name": "Cash back",
+      "unitName": "dollars",
+      "isCash": true,
+      "baselineCentsPerPoint": 100,
+      "baselineLabel": "cash back",
+      "redemptionExamples": []
+    }
+  ],
+  "cards": [
+    {
+      "id": "chase_sapphire_preferred",
+      "issuer": "Chase",
+      "name": "Sapphire Preferred",
+      "network": "Visa",
+      "annualFee": 95,
+      "currencyID": "chase_ur",
+      "isBusiness": false,
+      "colorHex": "#1F3A5F",
+      "earnRates": [
+        { "multiplier": 5, "category": "Travel booked through Chase Travel" },
+        { "multiplier": 3, "category": "Dining" },
+        { "multiplier": 3, "category": "Gas stations, EV charging and vacation homes" },
+        { "multiplier": 3, "category": "Top streaming services and online groceries" },
+        { "multiplier": 2, "category": "Other travel" },
+        { "multiplier": 1, "category": "Everything else" }
+      ],
+      "benefits": [
+        {
+          "id": "csp_hotel_credit",
+          "name": "Hotel credit",
+          "amount": 100,
+          "period": "annual",
+          "resetBasis": "cardmemberYear",
+          "detail": "For hotels booked through Chase Travel."
+        },
+        {
+          "id": "csp_doordash",
+          "name": "DoorDash promo",
+          "amount": 10,
+          "period": "monthly",
+          "resetBasis": "calendar",
+          "detail": "One non-restaurant DoorDash order each month, with complimentary DashPass."
+        }
+      ],
+      "offers": [
+        { "id": "csp_standard", "bonusPoints": 75000, "minimumSpend": 5000, "spendMonths": 3, "isElevated": false, "expiresAt": null }
+      ],
+      "sourceURL": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
+      "verifiedAt": "2026-11-10"
+    },
+    {
+      "id": "chase_sapphire_reserve",
+      "issuer": "Chase",
+      "name": "Sapphire Reserve",
+      "network": "Visa",
+      "annualFee": 795,
+      "currencyID": "chase_ur",
+      "isBusiness": false,
+      "colorHex": "#2B2D42",
+      "earnRates": [
+        { "multiplier": 8, "category": "Travel booked through Chase Travel, including The Edit" },
+        { "multiplier": 4, "category": "Flights and hotels booked direct" },
+        { "multiplier": 3, "category": "Dining" },
+        { "multiplier": 1, "category": "Everything else" }
+      ],
+      "benefits": [
+        {
+          "id": "csr_travel_credit",
+          "name": "Travel credit",
+          "amount": 300,
+          "period": "annual",
+          "resetBasis": "cardmemberYear",
+          "detail": "Applies automatically to most travel purchases."
+        },
+        {
+          "id": "csr_edit_credit",
+          "name": "The Edit hotel credit",
+          "amount": 500,
+          "period": "annual",
+          "resetBasis": "calendar",
+          "detail": "Up to $250 per prepaid stay of 2+ nights booked through The Edit, $500 a year."
+        },
+        {
+          "id": "csr_dining_credit",
+          "name": "Sapphire Exclusive Tables dining credit",
+          "amount": 150,
+          "period": "semiannual",
+          "resetBasis": "calendar",
+          "detail": "At participating OpenTable Exclusive Tables restaurants."
+        },
+        {
+          "id": "csr_stubhub_credit",
+          "name": "StubHub credit",
+          "amount": 150,
+          "period": "semiannual",
+          "resetBasis": "calendar",
+          "detail": "StubHub and viagogo purchases. Activation required. Through 2027."
+        },
+        {
+          "id": "csr_doordash",
+          "name": "DoorDash promos",
+          "amount": 35,
+          "period": "monthly",
+          "resetBasis": "calendar",
+          "detail": "One $15 restaurant promo and two $10 non-restaurant promos each month."
+        },
+        {
+          "id": "csr_lyft",
+          "name": "Lyft credit",
+          "amount": 10,
+          "period": "monthly",
+          "resetBasis": "calendar",
+          "detail": "In-app Lyft rides. Through Sep 2027."
+        },
+        {
+          "id": "csr_peloton",
+          "name": "Peloton membership credit",
+          "amount": 10,
+          "period": "monthly",
+          "resetBasis": "calendar",
+          "detail": "Peloton memberships. Activation required. Through 2027."
+        }
+      ],
+      "offers": [
+        { "id": "csr_standard", "bonusPoints": 100000, "minimumSpend": 6000, "spendMonths": 3, "isElevated": false, "expiresAt": null }
+      ],
+      "sourceURL": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
+      "verifiedAt": "2026-11-10"
+    },
+    {
+      "id": "chase_freedom_unlimited",
+      "issuer": "Chase",
+      "name": "Freedom Unlimited",
+      "network": "Visa",
+      "annualFee": 0,
+      "currencyID": "chase_ur",
+      "isBusiness": false,
+      "colorHex": "#3D6FB6",
+      "earnRates": [
+        { "multiplier": 5, "category": "Travel booked through Chase Travel" },
+        { "multiplier": 3, "category": "Dining and drugstores" },
+        { "multiplier": 1.5, "category": "Everything else" }
+      ],
+      "benefits": [],
+      "offers": [
+        { "id": "cfu_standard", "bonusPoints": 20000, "minimumSpend": 500, "spendMonths": 3, "isElevated": false, "expiresAt": null }
+      ],
+      "sourceURL": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited",
+      "verifiedAt": "2026-11-10"
+    },
+    {
+      "id": "chase_freedom_flex",
+      "issuer": "Chase",
+      "name": "Freedom Flex",
+      "network": "Mastercard",
+      "annualFee": 0,
+      "currencyID": "chase_ur",
+      "isBusiness": false,
+      "colorHex": "#4A90C2",
+      "earnRates": [
+        { "multiplier": 5, "category": "Rotating quarterly categories (activate; up to $1,500 a quarter)" },
+        { "multiplier": 5, "category": "Travel booked through Chase Travel" },
+        { "multiplier": 3, "category": "Dining and drugstores" },
+        { "multiplier": 1, "category": "Everything else" }
+      ],
+      "benefits": [],
+      "offers": [
+        { "id": "cff_standard", "bonusPoints": 20000, "minimumSpend": 500, "spendMonths": 3, "isElevated": false, "expiresAt": null }
+      ],
+      "sourceURL": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex",
+      "verifiedAt": "2026-11-10"
+    },
+    {
+      "id": "capone_venture_x",
+      "issuer": "Capital One",
+      "name": "Venture X",
+      "network": "Visa",
+      "annualFee": 395,
+      "currencyID": "capone_miles",
+      "isBusiness": false,
+      "colorHex": "#22262E",
+      "earnRates": [
+        { "multiplier": 10, "category": "Hotels and rental cars booked through Capital One Travel" },
+        { "multiplier": 5, "category": "Flights and vacation rentals booked through Capital One Travel" },
+        { "multiplier": 2, "category": "Everything else" }
+      ],
+      "benefits": [
+        {
+          "id": "vx_travel_credit",
+          "name": "Capital One Travel credit",
+          "amount": 300,
+          "period": "annual",
+          "resetBasis": "cardmemberYear",
+          "detail": "For bookings through Capital One Travel."
+        }
+      ],
+      "offers": [
+        { "id": "vx_standard", "bonusPoints": 75000, "minimumSpend": 4000, "spendMonths": 3, "isElevated": false, "expiresAt": null }
+      ],
+      "sourceURL": "https://www.capitalone.com/credit-cards/venture-x/",
+      "verifiedAt": "2026-11-10"
+    },
+    {
+      "id": "capone_savor",
+      "issuer": "Capital One",
+      "name": "Savor",
+      "network": "Mastercard",
+      "annualFee": 0,
+      "currencyID": "cash_back",
+      "isBusiness": false,
+      "colorHex": "#8C3B2E",
+      "earnRates": [
+        { "multiplier": 5, "category": "Hotels, vacation rentals and rental cars booked through Capital One Travel" },
+        { "multiplier": 3, "category": "Dining, entertainment, streaming and groceries (not Walmart or Target)" },
+        { "multiplier": 1, "category": "Everything else" }
+      ],
+      "benefits": [],
+      "offers": [
+        { "id": "savor_standard", "bonusPoints": 200, "minimumSpend": 500, "spendMonths": 3, "isElevated": false, "expiresAt": null }
+      ],
+      "sourceURL": "https://www.capitalone.com/credit-cards/savor/",
+      "verifiedAt": "2026-11-10"
+    },
+    {
+      "id": "amex_gold",
+      "issuer": "American Express",
+      "name": "Gold Card",
+      "network": "Amex",
+      "annualFee": 325,
+      "currencyID": "amex_mr",
+      "isBusiness": false,
+      "colorHex": "#B8944F",
+      "earnRates": [
+        { "multiplier": 4, "category": "Restaurants (up to $50,000 a year)" },
+        { "multiplier": 4, "category": "US supermarkets (up to $25,000 a year)" },
+        { "multiplier": 5, "category": "Prepaid hotels booked with Amex Travel" },
+        { "multiplier": 3, "category": "Flights booked direct or with Amex Travel" },
+        { "multiplier": 1, "category": "Everything else" }
+      ],
+      "benefits": [
+        {
+          "id": "gold_dining",
+          "name": "Dining credit",
+          "amount": 10,
+          "period": "monthly",
+          "resetBasis": "calendar",
+          "detail": "At Grubhub, The Cheesecake Factory, Goldbelly, Wine.com and Five Guys. Enrollment required."
+        },
+        {
+          "id": "gold_uber",
+          "name": "Uber Cash",
+          "amount": 10,
+          "period": "monthly",
+          "resetBasis": "calendar",
+          "detail": "For Uber rides or Uber Eats. Add the card to your Uber account."
+        },
+        {
+          "id": "gold_resy",
+          "name": "Resy dining credit",
+          "amount": 50,
+          "period": "semiannual",
+          "resetBasis": "calendar",
+          "detail": "At US Resy restaurants. Enrollment required."
+        },
+        {
+          "id": "gold_dunkin",
+          "name": "Dunkin' credit",
+          "amount": 7,
+          "period": "monthly",
+          "resetBasis": "calendar",
+          "detail": "At US Dunkin' locations. Enrollment required."
+        }
+      ],
+      "offers": [
+        { "id": "gold_standard", "bonusPoints": 100000, "minimumSpend": 8000, "spendMonths": 6, "isElevated": false, "expiresAt": null, "isPersonalized": true }
+      ],
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+      "verifiedAt": "2026-11-10"
+    },
+    {
+      "id": "amex_platinum",
+      "issuer": "American Express",
+      "name": "Platinum Card",
+      "network": "Amex",
+      "annualFee": 895,
+      "currencyID": "amex_mr",
+      "isBusiness": false,
+      "colorHex": "#8E9196",
+      "earnRates": [
+        { "multiplier": 5, "category": "Flights booked direct or with Amex Travel (up to $500,000 a year)" },
+        { "multiplier": 5, "category": "Prepaid hotels booked with Amex Travel" },
+        { "multiplier": 1, "category": "Everything else" }
+      ],
+      "benefits": [
+        {
+          "id": "plat_hotel",
+          "name": "Hotel credit",
+          "amount": 300,
+          "period": "semiannual",
+          "resetBasis": "calendar",
+          "detail": "For prepaid Fine Hotels + Resorts or The Hotel Collection bookings through Amex Travel."
+        },
+        {
+          "id": "plat_airline",
+          "name": "Airline fee credit",
+          "amount": 200,
+          "period": "annual",
+          "resetBasis": "calendar",
+          "detail": "For incidental fees on the one airline you select."
+        },
+        {
+          "id": "plat_resy",
+          "name": "Resy dining credit",
+          "amount": 100,
+          "period": "quarterly",
+          "resetBasis": "calendar",
+          "detail": "At US Resy restaurants. Enrollment required."
+        },
+        {
+          "id": "plat_lululemon",
+          "name": "lululemon credit",
+          "amount": 75,
+          "period": "quarterly",
+          "resetBasis": "calendar",
+          "detail": "At US lululemon stores and online. Enrollment required."
+        },
+        {
+          "id": "plat_entertainment",
+          "name": "Digital entertainment credit",
+          "amount": 25,
+          "period": "monthly",
+          "resetBasis": "calendar",
+          "detail": "For eligible streaming and news subscriptions. Enrollment required."
+        },
+        {
+          "id": "plat_uber",
+          "name": "Uber Cash",
+          "amount": 15,
+          "period": "monthly",
+          "resetBasis": "calendar",
+          "detail": "$15 a month, plus an extra $20 in December."
+        },
+        {
+          "id": "plat_uber_one",
+          "name": "Uber One membership credit",
+          "amount": 120,
+          "period": "annual",
+          "resetBasis": "calendar",
+          "detail": "Pays for an Uber One membership."
+        },
+        {
+          "id": "plat_clear",
+          "name": "CLEAR+ credit",
+          "amount": 219,
+          "period": "annual",
+          "resetBasis": "calendar",
+          "detail": "Pays for a CLEAR+ airport security membership."
+        },
+        {
+          "id": "plat_walmart",
+          "name": "Walmart+ credit",
+          "amount": 12.95,
+          "period": "monthly",
+          "resetBasis": "calendar",
+          "detail": "Pays for a monthly Walmart+ membership."
+        }
+      ],
+      "offers": [
+        { "id": "plat_standard", "bonusPoints": 175000, "minimumSpend": 12000, "spendMonths": 6, "isElevated": false, "expiresAt": null, "isPersonalized": true }
+      ],
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+      "verifiedAt": "2026-11-10"
+    },
+    {
+      "id": "amex_blue_cash_preferred",
+      "issuer": "American Express",
+      "name": "Blue Cash Preferred",
+      "network": "Amex",
+      "annualFee": 95,
+      "currencyID": "cash_back",
+      "isBusiness": false,
+      "colorHex": "#2F6DB5",
+      "earnRates": [
+        { "multiplier": 6, "category": "US supermarkets (up to $6,000 a year)" },
+        { "multiplier": 6, "category": "Select US streaming services" },
+        { "multiplier": 3, "category": "Transit and US gas stations" },
+        { "multiplier": 1, "category": "Everything else" }
+      ],
+      "benefits": [],
+      "offers": [
+        { "id": "bcp_standard", "bonusPoints": 300, "minimumSpend": 3000, "spendMonths": 6, "isElevated": false, "expiresAt": null, "isPersonalized": true }
+      ],
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-preferred/",
+      "verifiedAt": "2026-11-10"
+    },
+    {
+      "id": "chase_freedom_rise",
+      "issuer": "Chase",
+      "name": "Freedom Rise",
+      "network": "Visa",
+      "annualFee": 0,
+      "currencyID": "cash_back",
+      "isBusiness": false,
+      "colorHex": "#5B8FD1",
+      "earnRates": [
+        { "multiplier": 1.5, "category": "Everything" }
+      ],
+      "benefits": [],
+      "offers": [],
+      "welcomeNote": "A $25 statement credit when you turn on autopay in your first 3 months.",
+      "sourceURL": "https://creditcards.chase.com/cash-back-credit-cards/freedom/rise",
+      "verifiedAt": "2026-11-10"
+    },
+    {
+      "id": "capone_savor_student",
+      "issuer": "Capital One",
+      "name": "Savor Student",
+      "network": "Mastercard",
+      "annualFee": 0,
+      "currencyID": "cash_back",
+      "isBusiness": false,
+      "colorHex": "#A0523F",
+      "earnRates": [
+        { "multiplier": 5, "category": "Hotels, vacation rentals and rental cars booked through Capital One Travel" },
+        { "multiplier": 3, "category": "Dining, entertainment, streaming and groceries (not Walmart or Target)" },
+        { "multiplier": 1, "category": "Everything else" }
+      ],
+      "benefits": [],
+      "offers": [
+        { "id": "savor_student_standard", "bonusPoints": 50, "minimumSpend": 100, "spendMonths": 3, "isElevated": false, "expiresAt": null }
+      ],
+      "sourceURL": "https://www.capitalone.com/credit-cards/savor-student/",
+      "verifiedAt": "2026-11-10"
+    },
+    {
+      "id": "capone_quicksilver_secured",
+      "issuer": "Capital One",
+      "name": "Quicksilver Secured",
+      "network": "Mastercard",
+      "annualFee": 0,
+      "currencyID": "cash_back",
+      "isBusiness": false,
+      "colorHex": "#6B7280",
+      "earnRates": [
+        { "multiplier": 1.5, "category": "Everything" }
+      ],
+      "benefits": [],
+      "offers": [],
+      "securityDeposit": 200,
+      "sourceURL": "https://www.capitalone.com/credit-cards/quicksilver-secured/",
+      "verifiedAt": "2026-11-10"
+    },
+    {
+      "id": "discover_it_student",
+      "issuer": "Discover",
+      "name": "it Student Cash Back",
+      "network": "Discover",
+      "annualFee": 0,
+      "currencyID": "cash_back",
+      "isBusiness": false,
+      "colorHex": "#E8772E",
+      "earnRates": [
+        { "multiplier": 5, "category": "Rotating quarterly categories (activate; up to $1,500 a quarter)" },
+        { "multiplier": 1, "category": "Everything else" }
+      ],
+      "benefits": [],
+      "offers": [],
+      "welcomeNote": "Cashback Match: Discover matches all the cash back you earn in your first year.",
+      "sourceURL": "https://www.discover.com/credit-cards/student-credit-card/",
+      "verifiedAt": "2026-11-10"
+    },
+    {
+      "id": "discover_it_secured",
+      "issuer": "Discover",
+      "name": "it Secured Cash Back",
+      "network": "Discover",
+      "annualFee": 0,
+      "currencyID": "cash_back",
+      "isBusiness": false,
+      "colorHex": "#3A3F47",
+      "earnRates": [
+        { "multiplier": 5, "category": "Rotating quarterly categories (activate each quarter)" },
+        { "multiplier": 1, "category": "Everything else" }
+      ],
+      "benefits": [],
+      "offers": [],
+      "securityDeposit": 49,
+      "welcomeNote": "Cashback Match: Discover matches all the cash back you earn in your first year.",
+      "sourceURL": "https://www.discover.com/credit-cards/secured/",
+      "verifiedAt": "2026-11-10"
+    }
+  ],
+  "paths": [
+    {
+      "id": "chase_trifecta",
+      "name": "Chase Trifecta",
+      "tagline": "Flexible travel points, built one card at a time",
+      "summary": "Three Chase cards that pool their points together. The Sapphire unlocks transfers to airlines and hotels, and the Freedom cards earn extra on everyday spending.",
+      "requiresUnderFiveNewCards": true,
+      "steps": [
+        { "cardID": "chase_sapphire_preferred", "role": "Start here. Earns extra on dining and travel, and lets you move points to Hyatt, United and other partners.", "isOptional": false },
+        { "cardID": "chase_freedom_unlimited", "role": "No annual fee. Earns 1.5x on everything else, and those points join your Sapphire's.", "isOptional": false },
+        { "cardID": "chase_freedom_flex", "role": "No annual fee and 5x in categories that change each quarter.", "isOptional": true }
+      ],
+      "fit": [
+        { "tag": "goal.travel", "weight": 3, "reason": "You want free travel, and Chase points move to Hyatt and United, where they often go further than cash." },
+        { "tag": "goal.unsure", "weight": 1, "reason": "Chase points work as cash back or travel, so you can decide later." },
+        { "tag": "spend.dining", "weight": 2, "reason": "Eating out earns 3x points on every card in the path." },
+        { "tag": "spend.travel", "weight": 2, "reason": "Travel earns extra on the Sapphire." },
+        { "tag": "style.juggle", "weight": 1, "reason": "You're happy to use different cards for different purchases, which is how this path earns the most." }
+      ],
+      "watchOuts": [
+        "Chase usually turns down people who've opened 5 or more cards in the past 2 years, so this path works best as your first."
+      ],
+      "stages": [
+        "established"
+      ]
+    },
+    {
+      "id": "capone_duo",
+      "name": "Capital One Duo",
+      "tagline": "Simple travel rewards with almost no thinking",
+      "summary": "One card earns 2x miles on everything, and a no-fee partner earns more on food and fun. Easy to use and easy to redeem.",
+      "requiresUnderFiveNewCards": false,
+      "steps": [
+        { "cardID": "capone_venture_x", "role": "Start here. 2x miles on every purchase, plus a yearly travel credit and anniversary miles that offset most of the fee.", "isOptional": false },
+        { "cardID": "capone_savor", "role": "No annual fee. Earns 3% on dining, groceries and entertainment.", "isOptional": false }
+      ],
+      "fit": [
+        { "tag": "goal.travel", "weight": 3, "reason": "You want free travel, and Capital One miles can pay for any trip or move to airline partners." },
+        { "tag": "spend.everything", "weight": 3, "reason": "You spend across lots of categories, and 2x on everything means you never have to think about it." },
+        { "tag": "style.simple", "weight": 2, "reason": "You want it simple, and this path is just one main card." },
+        { "tag": "spend.dining", "weight": 1, "reason": "The Savor earns extra on eating out." }
+      ],
+      "watchOuts": [
+        "The Venture X fee only pays off if you use its travel credit, which has to be booked through Capital One Travel."
+      ],
+      "stages": [
+        "established"
+      ]
+    },
+    {
+      "id": "amex_foodie",
+      "name": "Amex Dining & Groceries",
+      "tagline": "Big points on the food you already buy",
+      "summary": "The Amex Gold earns 4x on restaurants and US supermarkets. Add the Platinum later if you start traveling more.",
+      "requiresUnderFiveNewCards": false,
+      "steps": [
+        { "cardID": "amex_gold", "role": "Start here. 4x points at restaurants and US supermarkets, plus monthly dining and Uber credits.", "isOptional": false },
+        { "cardID": "amex_platinum", "role": "For frequent travelers. Lounge access and large travel credits, with a large fee to match.", "isOptional": true }
+      ],
+      "fit": [
+        { "tag": "spend.dining", "weight": 3, "reason": "You eat out a lot, and the Gold earns 4x points at restaurants." },
+        { "tag": "spend.groceries", "weight": 3, "reason": "You spend a lot on groceries, and the Gold earns 4x at US supermarkets." },
+        { "tag": "goal.travel", "weight": 2, "reason": "Amex points move to airlines like Delta and Air France for trips." },
+        { "tag": "style.simple", "weight": 1, "reason": "You can get most of the value from one card." }
+      ],
+      "watchOuts": [
+        "Many of the Gold's credits are small monthly ones. They only offset the fee if you actually use them, and MaxCard will remind you."
+      ],
+      "stages": [
+        "established"
+      ]
+    },
+    {
+      "id": "simple_cash_back",
+      "name": "Simple Cash Back",
+      "tagline": "No annual fees, just money back",
+      "summary": "Two no-fee cards that cover most spending. Nothing to manage, and you can switch to a travel path later.",
+      "requiresUnderFiveNewCards": false,
+      "steps": [
+        { "cardID": "capone_savor", "role": "Start here. No annual fee and 3% back on dining, groceries and entertainment.", "isOptional": false },
+        { "cardID": "chase_freedom_unlimited", "role": "No annual fee and 1.5% back on everything else. If you later want travel, these points can join the Chase Trifecta.", "isOptional": false }
+      ],
+      "fit": [
+        { "tag": "goal.cashBack", "weight": 4, "reason": "You want cash back, and both cards pay it out with no strings." },
+        { "tag": "goal.unsure", "weight": 2, "reason": "It's a low-risk start while you figure out what you want." },
+        { "tag": "style.simple", "weight": 2, "reason": "You want it simple: two cards and no fees to justify." },
+        { "tag": "spend.groceries", "weight": 1, "reason": "Groceries earn 3% on the Savor." },
+        { "tag": "spend.dining", "weight": 1, "reason": "Eating out earns 3% on the Savor." },
+        { "tag": "spend.everything", "weight": 1, "reason": "Everything else earns 1.5% on the Freedom Unlimited." }
+      ],
+      "watchOuts": [
+        "Chase may turn down the Freedom Unlimited if you've opened 5 or more cards in the past 2 years."
+      ],
+      "stages": [
+        "established"
+      ]
+    },
+    {
+      "id": "student_starter",
+      "name": "Student Starter",
+      "tagline": "Earn on food and fun while you build credit in school",
+      "summary": "A no-fee student card that pays extra where students spend the most. After about a year of on-time payments, add a Freedom Unlimited and retake the quiz to pick your next path.",
+      "requiresUnderFiveNewCards": false,
+      "stages": [
+        "student"
+      ],
+      "steps": [
+        { "cardID": "capone_savor_student", "role": "Start here. Made for students, with 3% back on dining, groceries, entertainment and streaming.", "isOptional": false },
+        { "cardID": "chase_freedom_unlimited", "role": "Add this after about a year of on-time payments. It earns Chase points that can later join a Sapphire card for travel.", "isOptional": false, "minMonthsOfHistory": 12 }
+      ],
+      "fit": [
+        { "tag": "stage.student", "weight": 5, "reason": "You're a student, and student cards are easier to get with little or no credit history." },
+        { "tag": "spend.dining", "weight": 3, "reason": "You eat out a lot, and it earns 3% at restaurants." },
+        { "tag": "spend.groceries", "weight": 3, "reason": "You spend a lot on groceries, and it earns 3% at grocery stores." },
+        { "tag": "goal.cashBack", "weight": 2, "reason": "You want cash back, and it pays out as cash with no minimum." },
+        { "tag": "goal.unsure", "weight": 1, "reason": "Cash back is a simple start while you figure out what you want." },
+        { "tag": "goal.travel", "weight": 1, "reason": "You want travel eventually, and this path leads to Chase points once you've built some credit." }
+      ],
+      "watchOuts": [
+        "Pay the full statement balance every month. You'll never pay interest, and on-time payments are what build your credit.",
+        "Keep the balance under about 30% of your credit limit when each statement closes.",
+        "Turn on autopay for at least the minimum payment so a payment is never missed by accident.",
+        "You'll need to be enrolled in college. The application asks about your school and income, and part-time job income counts."
+      ]
+    },
+    {
+      "id": "first_card",
+      "name": "Your First Card",
+      "tagline": "Start building credit with one simple, no-fee card",
+      "summary": "One card for everyday spending, paid off in full each month. After about a year of on-time payments, add a Freedom Unlimited and you're on your way to the Chase Trifecta.",
+      "requiresUnderFiveNewCards": false,
+      "stages": [
+        "newToCredit",
+        "student"
+      ],
+      "steps": [
+        { "cardID": "chase_freedom_rise", "role": "Start here. Made for people with no credit history, with 1.5% back on everything. Having $250 in a Chase bank account improves your odds.", "isOptional": false },
+        { "cardID": "chase_freedom_unlimited", "role": "Add this after about a year of on-time payments. It earns Chase points that can later join a Sapphire card for travel.", "isOptional": false, "minMonthsOfHistory": 12 }
+      ],
+      "fit": [
+        { "tag": "stage.newToCredit", "weight": 5, "reason": "You're new to credit, and the Freedom Rise is built for people with no credit history." },
+        { "tag": "stage.student", "weight": 3, "reason": "It's an easy first card in school, and you don't have to be a student to keep it." },
+        { "tag": "spend.everything", "weight": 3, "reason": "You spend across lots of categories, and it earns 1.5% on everything." },
+        { "tag": "goal.travel", "weight": 2, "reason": "You want travel eventually, and this path leads into the Chase Trifecta, which is built for it." },
+        { "tag": "goal.cashBack", "weight": 2, "reason": "You want cash back, and it pays 1.5% on every purchase." },
+        { "tag": "goal.unsure", "weight": 1, "reason": "Cash back now, with the option to move into travel points later." }
+      ],
+      "watchOuts": [
+        "Pay the full statement balance every month. You'll never pay interest, and on-time payments are what build your credit.",
+        "Keep the balance under about 30% of your credit limit when each statement closes.",
+        "Turn on autopay for at least the minimum payment so a payment is never missed by accident."
+      ]
+    },
+    {
+      "id": "secured_rebuild",
+      "name": "Rebuild with a Secured Card",
+      "tagline": "A safe way back to good credit",
+      "summary": "You put down a refundable deposit that becomes your credit limit. Use it lightly and pay it off every month. Discover reviews your account after several months and can return the deposit once you've shown you can handle it.",
+      "requiresUnderFiveNewCards": false,
+      "stages": [
+        "rebuilding",
+        "newToCredit"
+      ],
+      "steps": [
+        { "cardID": "discover_it_secured", "role": "Start here. Needs a refundable deposit of $49 to $200, depending on your credit. Discover matches all the cash back you earn in the first year.", "isOptional": false },
+        { "cardID": "chase_freedom_unlimited", "role": "Add this once your score has recovered, usually after a year or more of on-time payments.", "isOptional": false, "minMonthsOfHistory": 12 }
+      ],
+      "fit": [
+        { "tag": "stage.rebuilding", "weight": 6, "reason": "You're rebuilding, and secured cards are made to approve people in your situation." },
+        { "tag": "stage.newToCredit", "weight": 1, "reason": "If you're turned down for a regular first card, this is the reliable backup." },
+        { "tag": "goal.cashBack", "weight": 2, "reason": "It pays cash back while you rebuild, and Discover matches it all in your first year." }
+      ],
+      "watchOuts": [
+        "Pay the full statement balance every month. You'll never pay interest, and on-time payments are what build your credit.",
+        "Keep the balance under about 30% of your credit limit when each statement closes.",
+        "Turn on autopay for at least the minimum payment so a payment is never missed by accident.",
+        "The deposit isn't a fee. You get it back when you close the card or are moved to a regular card."
+      ]
+    }
+  ]
+}
